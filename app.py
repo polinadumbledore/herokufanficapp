@@ -14,7 +14,6 @@ class Todo(db.Model):
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    def predict():
     if request.method == 'POST':
         data = request.form['message']
         return render_template('result.html')
