@@ -16,7 +16,11 @@
 	</header>
 	<p style="color:#ecb939;font-size:20;text-align: center;"><b>Результаты поиска</b></p>
 	<div class="results">
-		<p1></p1>
+		<p1>
+            {% for i in range(0, res|length) %}
+                {{ res[i][0] }} <p>[{{ res[i][1] }}]</p>
+            {% endfor %}
+        </p1>
 
 
 	</div>
