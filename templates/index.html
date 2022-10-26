@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<header>
+    <div class="container">
+    <div id="brandname">
+        Корпус фанфиков
+    </div>
+    <h2></h2>
+
+</div>
+</header>
+
+<div class="ml-container">
+
+    <form action="{{ url_for('predict')}}" method="POST">
+    <p>Поиск по корпусу</p>
+    <!-- <input type="text" name="comment"/> -->
+    <textarea name="message" rows="4" cols="50"></textarea>
+    <br/>
+
+    <input type="submit" class="btn-info" value="search">
+
+</form>
+
+</div>
+
+
+
+
+{% endblock %}
